@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "2rfC1yZFB1coDpz6kvHEDZAYUh3jRPOr0LKNihHNt1RfeO67uZynlJ8a+TT6APwwg95uDPXPOELeEgd/xOaPjQ==",
+  "dgSpecHash": "K7GxUgyzx8v1zWuM44/ORtPirVNV9RpcR6VamCj0Nel4vxIgquJ1WOb1ITho/OcQ+dyQzehkK7wRrAq7kkle7Q==",
   "success": true,
-  "projectFilePath": "/home/browser/AwePayAPI/AwePayAPI.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Saras\\Desktop\\AwePayAPI\\AwePayAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Saras\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Saras\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Saras\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Saras\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Saras\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Saras\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
   "logs": []
 }
