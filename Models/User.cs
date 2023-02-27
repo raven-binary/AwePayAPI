@@ -1,7 +1,7 @@
 namespace AwePayAPI.Models
 {
 
-	public class AwePay
+	public class Users
 	{
 		public int ID {get; set;}
 		public string fullname {get; set;}

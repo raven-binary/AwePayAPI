@@ -1,6 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using AwePayAPI.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<APIContext>
+	(opt => opt.UseInMemoryDatabase("UserDb"));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
