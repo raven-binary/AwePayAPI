@@ -1,18 +1,15 @@
 using Microsoft.EntityFrameworkCore;
 using AwePayAPI.Models;
 
-namespace AwePayAPI.Data
+namespace AwePayAPI.Data.APIContext;
 
+public class APIContext : DbContext
 {
-	public class APIContext : DbContext
+	public DbSet<Users> UsersDb { get; set; } //UsersDb is the name of the in-memory database
+
+	public APIContext(DbContextOptions<APIContext> options)
+		:base(options)
 	{
-		public DbSet<AwePayAPI> UsersDb {get; set;} //UsersDb is the name of the in-memory database
-
-		public APIContext(DbContextOptions<APIContext> options)
-			:base(options)
-		{
-			
-		}
+		
 	}
-
 }
