@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using AwePayAPI.Models;
 using AwePayAPI.Data.APIContext;
@@ -6,6 +6,7 @@ using Redis.OM;
 using Redis.OM.Searching;
 using System.Numerics;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace AwePayAPI.Controllers.User;
 
@@ -48,7 +49,7 @@ public class UserController : ControllerBase
     // Edit
     [HttpPut]
     public JsonResult Edit(int ID, string fullname, string email, int phone, int age)
-    { 
+    {
         if (ID <= 0)
         {
             Console.WriteLine("User ID must be greater than 0");
@@ -74,7 +75,7 @@ public class UserController : ControllerBase
                     //return new JsonResult(Ok(tempstr));
                 }
 
-                if (tempstrRedis != null) 
+                if (tempstrRedis != null)
                 {
                     foreach (var person in _people.Where(x => x.ID == ID))
                     {
@@ -117,7 +118,7 @@ public class UserController : ControllerBase
         if (Email != null)
         {
             var resultRedisEmail = _people.Where(x => x.Email == Email).OrderByDescending(x => x.Email).ToList(); // Redisearch
-            
+
             return new JsonResult(Ok(resultRedisEmail));
         }
 

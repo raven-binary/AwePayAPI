@@ -3,12 +3,14 @@ using AwePayAPI.Data.APIContext;
 using AwePayAPI.Data.IndexCreationService;
 using Redis.OM;
 using System.Reflection.Metadata;
+using AwePayAPI.Data;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddDbContext<APIContext>
-	(opt => opt.UseInMemoryDatabase("Db"));
+    (opt => opt.UseInMemoryDatabase("Db"));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI

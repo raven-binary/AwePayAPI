@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Saras\\Desktop\\AwePayAPI\\AwePayAPI.csproj": {}
+    "C:\\Users\\Saras\\Desktop\\newAwePayAPI\\newAwePayAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Saras\\Desktop\\AwePayAPI\\AwePayAPI.csproj": {
+    "C:\\Users\\Saras\\Desktop\\newAwePayAPI\\newAwePayAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Saras\\Desktop\\AwePayAPI\\AwePayAPI.csproj",
-        "projectName": "AwePayAPI",
-        "projectPath": "C:\\Users\\Saras\\Desktop\\AwePayAPI\\AwePayAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Saras\\Desktop\\newAwePayAPI\\newAwePayAPI.csproj",
+        "projectName": "newAwePayAPI",
+        "projectPath": "C:\\Users\\Saras\\Desktop\\newAwePayAPI\\newAwePayAPI.csproj",
         "packagesPath": "C:\\Users\\Saras\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Saras\\Desktop\\AwePayAPI\\obj\\",
+        "outputPath": "C:\\Users\\Saras\\Desktop\\newAwePayAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Saras\\AppData\\Roaming\\NuGet\\NuGet.Config",
