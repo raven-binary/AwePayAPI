@@ -118,8 +118,15 @@ public class UserController : ControllerBase
         if (Email != null)
         {
             var resultRedisEmail = _people.Where(x => x.Email == Email).OrderByDescending(x => x.Email).ToList(); // Redisearch
-
-            return new JsonResult(Ok(resultRedisEmail));
+            if (resultRedisEmail != null) 
+            {
+                return new JsonResult(Ok(resultRedisEmail));
+            }
+            else
+            {
+                return new JsonResult(NotFound());
+            }
+            
         }
 
         else if (Email == null)
@@ -136,7 +143,16 @@ public class UserController : ControllerBase
         if (Phone != null)
         {
             var resultRedisPhone = _people.Where(x => x.Phone == Phone).OrderByDescending(x => x.Phone).ToList(); // Redisearch
-            return new JsonResult(Ok(resultRedisPhone));
+            if (resultRedisPhone != null)
+            {
+                return new JsonResult(Ok(resultRedisPhone));
+            }
+
+            else
+            {
+                return new JsonResult(NotFound());
+            }
+            
         }
 
         else if (Phone == null)
