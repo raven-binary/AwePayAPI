@@ -11,11 +11,11 @@
 ### As for database, both In-Memory and Redisearch were used.
 
 ### Redisearch were used to make sure database is persisted and can be used throughout a vast majority of applications
-### Redisearch also provides Machine Learning pipelines as it allows Full-Text search on hashes, and it is very fast
+### Redisearch also enables Machine Learning pipelines as it allows Full-Text search on hashes, and it is very fast
 ### Therefore, many companies out there if they are dealing with payment, have to consider:
 #### 1. Anti Money Laundering
 #### 2. KYC - Know Your Customer
-### Hence, Redisearch helps a lot here.
+### Hence, Redisearch helps a lot here, and can support multiple applications.
 
 ### The timeline of this project roughly took 2 weeks ~ and I can assure that all logics were done very quickly (can be checked via Github commit history)
 #### 1. This project has 2 live cloud nodes:
